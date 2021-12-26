@@ -1,0 +1,7 @@
+function substrings(s)
+  for i = 1, #s do
+    for j = 1, #s do
+      return string.sub(s, i, j)
+    end
+  end
+end

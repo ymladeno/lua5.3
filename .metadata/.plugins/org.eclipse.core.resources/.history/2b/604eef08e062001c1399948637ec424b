@@ -1,0 +1,14 @@
+function fileAsArray(name)
+  local proxy = {}
+  local f = io.open(name, "w")
+  local mt = {
+    __index = 
+  }
+  setmetatable(proxy, mt)
+  return proxy
+end
+
+local t = fileAsArray("temp")
+print(t[2])
+
+t[2] = "dog"

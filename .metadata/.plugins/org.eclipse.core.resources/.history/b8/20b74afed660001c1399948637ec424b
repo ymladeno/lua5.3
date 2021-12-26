@@ -1,0 +1,22 @@
+function subSets(s,f)
+  local subs = {{}}
+  for i = 1, #s do
+    for j = 1, #subs do
+      local tmp = {table.unpack(subs[j])}
+--      f(tmp)
+      tmp[#tmp + 1] = s[i]
+      subs[#subs + 1] = tmp
+      f(subs)
+      f(tmp)
+    end
+  end
+end
+
+function printSet(s)
+  io.write("{")
+  for i = 1,#s do io.write(i == 1 and "" or ",", s[i]) end
+  io.write("}\n")
+end
+
+--subSets({1,2,3,4}, function(s) printSet(s) end)
+subSets({1,2,3,4}, printSet)

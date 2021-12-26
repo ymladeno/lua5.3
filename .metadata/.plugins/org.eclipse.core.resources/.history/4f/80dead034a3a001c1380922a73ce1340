@@ -1,0 +1,6 @@
+function translate(s,tab)
+
+end
+
+tab = {["a"] = "A", ["b"] = "B", ["c"]:"1"}
+translate("abcd")

@@ -1,0 +1,32 @@
+local Account = {}
+local proxies = {}
+
+local mt = {
+  __index = function(t, k)
+    return proxies[t][k]
+    end
+}
+
+function Account:withdraw(v)
+  self.balance = self.balance - v
+end
+
+function Account:deposit(v)
+  self.balance = self.balance + v
+end
+
+function Account:getBalance()
+  return self.balance
+end
+
+function Account:new(o)
+  local proxy = {}
+  o = o or { balance = 0 }
+  self.__index = self
+  setmetatable(o, self)
+  o.balance = 0
+  return o
+end
+
+function proxy 
+return Account

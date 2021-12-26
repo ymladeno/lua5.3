@@ -1,0 +1,4 @@
+function reverse(s)
+end
+
+print(reverse("ação"))

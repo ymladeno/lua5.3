@@ -1,0 +1,5 @@
+local function
+
+for i in fromto(n,m) do
+-- body
+end

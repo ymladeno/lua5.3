@@ -1,0 +1,18 @@
+function newBitArray(n)
+  local t = {}
+  local w = n//64
+  if n > w*64 then w = w + 1 end
+  
+  for i=1,w do
+    t[#t+1] = 0
+  end
+  
+  return t
+end
+
+function setBit(a,n,v)
+  a[n] = v
+end
+
+function testBit(a,n)
+end

@@ -1,0 +1,4 @@
+function trim(s)
+  s = string.gsub(s, "^s*(.-)%s*S", "%1")
+  return s
+end

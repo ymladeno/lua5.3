@@ -1,0 +1,4 @@
+function weekDay()
+end
+
+print(weekDay()

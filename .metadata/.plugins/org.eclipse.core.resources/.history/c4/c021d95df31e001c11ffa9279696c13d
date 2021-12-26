@@ -1,0 +1,7 @@
+print('<![CDATA[\n\tHello world\n]]>')
+-- print("<![CDATA[\n\tHello world\n]]>")
+
+very_long_string = [[
+<html>
+<head>
+]]

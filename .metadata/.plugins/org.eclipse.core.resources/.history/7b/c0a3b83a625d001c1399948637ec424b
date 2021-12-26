@@ -1,0 +1,7 @@
+function stringrep(s,n)
+  local r = ""
+  if n > 0 then
+    while n > 1 do
+    end
+  end
+end

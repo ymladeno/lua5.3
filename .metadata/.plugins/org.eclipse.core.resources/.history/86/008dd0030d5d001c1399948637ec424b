@@ -1,0 +1,17 @@
+function multiload(...)
+  local readerlist = table.pack(...)
+
+  local code = function()
+    for i = 1, readerlist.n do
+      if type(readerlist[i]) == "string" then
+          if readerlist[i] == nil then return nil end
+          return readerlist[i]
+        end
+      end
+    end
+  end
+  
+  return load(code, "load code", "t")
+end
+
+--f = multiload("local x = 10;", io.lines("temp", "*L"), "print(x)")

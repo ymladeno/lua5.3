@@ -1,0 +1,10 @@
+local Stack = require 'stack'
+
+local StackQueque = Stack:new{}
+
+function StackQueue:insertbottom(v)
+  table.insert(self.list, 1)
+end
+
+local sq = StackQueue:new{}
+

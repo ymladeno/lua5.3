@@ -1,0 +1,29 @@
+function substrings(s)
+  local i = 0
+  local j = 0
+  return function()
+    while i < #s do
+      while j < #s do
+        j = j + 1
+        return string.sub(s, i, j)
+      end
+    end
+
+    for i = 1, #s do
+      for j = i, #s do
+        return string.sub(s, i, j)
+      end
+    end
+    return nil
+  end
+end
+
+--function substrings(s)
+--  for i = 1, #s do
+--    for j = i, #s do
+--      return function() return string.sub(s, i, j) end
+--    end
+--  end
+--end
+
+for subs in substrings("abcd") do print(subs) end

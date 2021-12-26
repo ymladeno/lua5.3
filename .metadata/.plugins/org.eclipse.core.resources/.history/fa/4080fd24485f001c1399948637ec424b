@@ -1,0 +1,12 @@
+function mysearcher(name, path)
+  local file = package.searchpath(name, path)
+  if file then
+    local f = loadfile(file)
+    if not f then
+      package.loadlib(file)
+    end
+  end
+  package.loadlib(file)
+end
+
+local p = "./?.lua;./?.so;/usr/lib/lua5.3/?.so;/usr/share/lua5.3/?.lua"

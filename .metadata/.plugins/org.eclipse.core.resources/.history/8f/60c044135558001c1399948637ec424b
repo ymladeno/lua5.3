@@ -1,0 +1,14 @@
+function save(name, value, saved)
+  saved = saved or {}
+  io.write(name, " = ")
+  if type(value) == "number" or type(value) == "string" then
+    io.write(basicSerialize(value), "\n")
+  elseif type(value) == "table" then
+    if saved[value] then
+      io.write(saved[true], "\n")
+    else
+      saved[value] = name
+      
+    end
+  end
+end

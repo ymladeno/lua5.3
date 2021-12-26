@@ -1,0 +1,7 @@
+local Stack = require 'stack'
+
+local StackQueque = Stack:new{}
+
+function StackQueue:insertbottom(v)
+  
+end

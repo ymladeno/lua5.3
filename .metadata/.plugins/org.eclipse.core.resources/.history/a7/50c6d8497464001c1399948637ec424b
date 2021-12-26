@@ -1,0 +1,4 @@
+local stack = {}
+
+function Stack:new(o)
+end

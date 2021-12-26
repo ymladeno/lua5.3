@@ -1,0 +1,40 @@
+function stringrep(s,n)
+  local r = ""
+  if n > 0 then
+    while n > 1 do
+      if n % 2 ~= 0 then r = r .. s end
+      s = s .. s
+      n = math.floor(n / 2)
+    end
+    r = r .. s
+  end
+  return r
+end
+
+function stringrep_5(s)
+  local r = ""
+  r = r .. s
+  s = s .. s
+  s = s .. s
+  r = r .. s
+  return r
+end
+
+function stringrep_n(n)
+  local code = {"local args = {...}", "local r = ''", "local s = args[1]"}
+  if n > 0 then
+    while n > 1 do
+      if n % 2 ~= 0 then code[#code+1] = "r = r .. s " end
+      code[#code+1] = "s = s .. s "
+      n = math.floor(n / 2)
+    end
+    code[#code+1] = "r = r .. s "
+  end
+  code[#code+1] = "return r"
+
+  return load(table.concat(code), "stringrep_n")
+end
+
+-- f = load('ex3.lua')
+-- f()
+-- 

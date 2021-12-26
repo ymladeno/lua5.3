@@ -1,0 +1,34 @@
+function loadwithprefix(prefix, chunk)
+  local type_prefix = type(prefix)
+  local type_chunk = type(chunk)
+  assert(type_prefix == "string", "invalid prefix type " .. type_prefix)
+  assert(type_chunk == "string" or type_chunk == "function", "invalid chunk type " .. type_chunk)
+
+  local code = 
+  if type_chunk == "function" then
+    
+  else
+    local prefixReturned = false
+    local chunkReturned = false
+    local func = function() 
+      if not prefixReturned then 
+        prefixReturned = true
+        return prefix
+      end
+      if not chunkReturned then
+        chunkReturned = true
+        return chunk
+      end
+      return nil
+    end
+  end
+  return load(func)
+end
+
+-- Usage:
+-- x = 10
+-- local f = loadwithprefix("return ", "i + 1")
+-- f()
+
+-- local f = loadwithprefix("local i = ...", "return i + 1")
+-- f(10)

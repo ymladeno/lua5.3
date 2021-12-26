@@ -1,0 +1,5 @@
+function weekDay()
+  os.date("*t")
+end
+
+print(weekDay())

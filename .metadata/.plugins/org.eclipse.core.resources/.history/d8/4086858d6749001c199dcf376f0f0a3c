@@ -1,0 +1,4 @@
+function sinceDay()
+end
+
+wsec(os.date())

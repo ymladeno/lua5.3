@@ -1,0 +1,21 @@
+local proxies = {}
+local mt = {
+  __index = function(t, k)
+    return proxies[t][k]
+    end,
+  __newindex = function(t, k, v)
+    proxies[t][k] = v
+    end
+}
+
+local function proxyAccount()
+  local proxy = {}
+  local a = Account:new{}
+  proxies[proxy] = a
+  setmatatable(proxy, mt)
+  return proxy
+end
+
+local b = proxyAccount()
+b:deposit(103.5)
+print(b:balance())

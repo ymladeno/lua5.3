@@ -1,0 +1,25 @@
+function bits(x)
+  local cnt = 0
+  local mask = 0x01
+  for i=1,64 do
+    cnt = cnt + (x & mask)
+    x = x >> 1
+  end
+  return cnt
+end
+
+function bits1(x)
+  local cnt = 0
+  local mask = 0x
+  for i=1,63 do
+--    print(string.format("%d. 0x%x 0x%x %d", i,2^i,x,cnt))
+    if (x & mask) > 0 then
+      cnt = cnt + 1
+    end
+    mask = mask << 1
+  end
+  return cnt
+end
+
+print(bits(tonumber(arg[1])))
+print(bits1(tonumber(arg[1])))

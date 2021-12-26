@@ -1,0 +1,6 @@
+function translate(s,tab)
+  string.gsub(s, )
+end
+
+tab = {["a"] = "A", ["b"] = "B", ["c"] = "C"}
+translate("adbc",tab)

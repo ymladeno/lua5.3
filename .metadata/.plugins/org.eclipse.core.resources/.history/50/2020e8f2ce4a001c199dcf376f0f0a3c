@@ -1,0 +1,5 @@
+function bits(x)
+  string.pack("J",)
+end
+
+print(bits(tonumber(argv[1])))

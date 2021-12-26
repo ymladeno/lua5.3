@@ -1,0 +1,9 @@
+print('<![CDATA[\n\tHello world\n]]>')
+-- print("<![CDATA[\n\tHello world\n]]>")
+
+long = [[
+<html>
+<head>
+]]
+
+print(long)

@@ -1,0 +1,8 @@
+local Set = {}
+
+function Set.new(l)
+  local set = {}
+  for _,v in ipairs(l) do set[v] = true end
+  return set
+end
+

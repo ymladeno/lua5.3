@@ -1,0 +1,9 @@
+local x = 0x8000000000000010
+local cnt = 0
+local mask = 0x01
+for i=1,16 do
+  cnt = cnt + (x & mask)
+  mask = mask << 1
+end
+
+print(cnt)

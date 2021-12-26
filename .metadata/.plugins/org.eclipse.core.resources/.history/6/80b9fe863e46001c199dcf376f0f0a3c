@@ -1,0 +1,11 @@
+function words(file,n)
+  local counter = {}
+  for line in io.lines() do
+    for word in string.gmatch(line, "%w+") do
+      counter[word]=(counter[word] or 0)+1
+    end
+  end
+end
+
+
+words("file", 5)

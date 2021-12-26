@@ -1,0 +1,6 @@
+function day1Friday(year)
+  d = os.time({year=year, month=1, day=1, hour=0})
+  
+end
+
+print(day1Friday(1980))

@@ -1,0 +1,3 @@
+local Account = require 'Account'
+
+local a = Account:new()

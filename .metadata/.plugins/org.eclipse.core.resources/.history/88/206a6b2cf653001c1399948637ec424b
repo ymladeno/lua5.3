@@ -1,0 +1,84 @@
+local function name2node(graph, name)
+  local node = graph[name]
+  if not node then
+    node = {name = name, adj = {}, weight = 0}
+    graph[name] = node
+  end
+  return node
+end
+
+function readgraph()
+  local graph = {}
+  for line in io.lines() do
+    local namefrom, nameto, label = string.match(line, "(%S+)%s+(%S+)%s+(%d+)")
+    local from = name2node(graph, namefrom)
+    local to = name2node(graph, nameto)
+    local arc = {label = tonumber(label), next = to}
+    from.adj[arc] = true
+  end
+  return graph
+end
+
+function findpath(curr, to, path, visited, distance)
+  path = path or {}
+  visited = visited or {}
+  distance = distance or 0
+
+  if visited[curr] then
+    return nil
+  end
+
+  visited[curr] = true
+  path[#path + 1] = curr
+  if curr == to then
+    return path
+  end
+  
+  for node in pairs(curr.adj) do
+    distance = distance + node.label
+    local p = findpath(node.next, to, path, visited, distance)
+    if p then return p,distance end
+  end
+  table.remove(path)
+end
+
+function findShortestPath(curr, to, path, visited)
+  path = path or {}
+  visited = visited or {}
+
+  if visited[curr] then
+    return nil
+  end
+
+  visited[curr] = true
+--  path shall include node is it's included in shortest path
+  path[#path + 1] = curr
+  if curr == to then
+    return path
+  end
+
+  for node in pairs(curr.adj) do
+    findpath(node.next, to, path, visited)
+  end
+  
+  
+  table.remove(path)
+end
+
+function printpath(path)
+--  local dist = 0
+--  for _,node in pairs(path) do
+--    dist = dist + (node.adj.label or 0)
+--    print(node.name, node.adj.label)
+--  end
+
+  for i = 1, #path do
+    print(path[i].name)
+  end
+end
+
+g = readgraph()
+a = name2node(g, "a")
+b = name2node(g, "b")
+p,d = findpath(a, b)
+if p then printpath(p); print("Distance: ", d) end

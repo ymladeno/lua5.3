@@ -1,0 +1,4 @@
+local t = os.time({year=2015, month=1, day=12})
+t.month = t.month + 1
+t.day = t.day + 1
+local t1 = os.time({year=2015, month=1, day=12})

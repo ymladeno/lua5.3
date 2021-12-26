@@ -1,0 +1,37 @@
+local function getFileByte(proxy, key)
+  return proxy.bytes[key]
+end
+
+local function setFileByte(proxy, key, value)
+  proxy.bytes[key] = value
+  local str = table.concat(proxy.bytes)
+  local f = io.open("temp", "w")
+  f:write(str)
+  f:close()
+end
+
+function fileAsArray(name)
+  local f = io.open(name, "r")
+  local s = f:read("a")
+  f:close()
+  local proxy = { filename = name, bytes = {string.byte(s, 1, -1)} }
+  local mt = {
+    __index = getFileByte,
+    __newindex = setFileByte
+  }
+  setmetatable(proxy, mt)
+  return proxy
+end
+
+-- prepare the file
+--[=[
+local f = io.open("temp", "wb")
+local s = string.pack("b b b", 0x46, 0x47, 0x48)
+f:write(s)
+f:close()
+]=]--
+
+local t = fileAsArray("temp")
+print(string.char(t[2]))
+
+t[2] = 73

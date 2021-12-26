@@ -1,0 +1,11 @@
+local function fromto(n,m)
+  return function() 
+          n = n + 1
+          if n > m then return nil end
+          return n
+         end
+end
+
+for i in fromto(n,m) do
+-- body
+end

@@ -1,0 +1,18 @@
+function multiload(...)
+  local readerlist = table.pack(...)
+
+  local i = 1
+  local code = function()
+    while i ~= 0 do
+      print("loop ", i)
+      i = i - 1
+      print("list ", readerlist[i])
+      return readerlist[i]
+    end
+    return nil
+  end
+
+  return load(code, "load code", "t")
+end
+
+--f = multiload("local x = 10;", io.lines("temp", "*L"), "print(x)")

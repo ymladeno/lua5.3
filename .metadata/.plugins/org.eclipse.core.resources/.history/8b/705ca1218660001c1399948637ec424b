@@ -1,0 +1,12 @@
+function substrings(s)
+  return function()
+    for i = 1, #s do
+    for j = i, #s do
+      return string.sub(s, i, j)
+    end
+  end
+  return nil
+  end
+end
+
+for subs in substrings("abcd") do print(subs) end

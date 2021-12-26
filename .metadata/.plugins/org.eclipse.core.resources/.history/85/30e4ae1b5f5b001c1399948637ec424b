@@ -1,0 +1,12 @@
+function loadwithprefix(prefix, chunk)
+  local type_prefix = type(prefix)
+  local type_chunk = type(chunk)
+  assert(type_prefix == "string", "invalid prefix type " .. type_prefix)
+  assert(type_chunk == "string" or type_chunk == "function", "invalid chunk type " .. type_chunk)
+  local func = function() return prefix end
+  load(func)
+end
+
+local f = loadwithprefix("lua_", "i = i + 1")
+f()
+--loadwithprefix("lua_", io.read())

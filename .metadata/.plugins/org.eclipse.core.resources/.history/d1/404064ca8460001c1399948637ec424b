@@ -1,0 +1,3 @@
+function substrings(s)
+  string.sub(s, i, j)
+end

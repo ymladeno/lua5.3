@@ -1,0 +1,10 @@
+function prtable(a)
+  for i=1,#a do print(a[i]) end
+end
+
+function prtable1()
+
+end
+
+a = {1,2,3}
+prtable(a)

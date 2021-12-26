@@ -1,0 +1,18 @@
+function pali(x)
+  local t = {}
+  while x > 0 do
+    print
+    local r = x%2
+    t[#t+1] = r
+    x = (x -r) /2
+  end
+  
+  print(table.concat(t))
+--  local s = string.format("%x", x)
+--  local s1 = s:reverse()
+--  
+--  print(s, s:reverse())
+--  return s == s:reverse()
+end
+
+print(pali(tonumber(arg[1])))

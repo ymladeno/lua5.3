@@ -1,0 +1,13 @@
+function createMat(R,C)
+  local mt = {}
+  for i = 1, N do
+    local row = {}
+    mt[i] = row
+    for j = 1, M do
+      row[j] = 0
+    end
+  end
+end
+
+m = createMat(2,3)
+print(#m)

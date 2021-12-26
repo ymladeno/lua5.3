@@ -1,0 +1,7 @@
+local balance = 0
+
+local Account = {}
+
+function Account:withdraw(v)
+  balance[self] = balance[self]
+end

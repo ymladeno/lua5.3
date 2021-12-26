@@ -1,0 +1,8 @@
+function room1
+  local move = io.read()
+  if move == "south" then room3()
+  elseif move == "east" then room2()
+  else
+    print("invalid room)
+  end 
+end

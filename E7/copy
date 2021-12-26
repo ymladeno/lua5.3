@@ -1,0 +1,28 @@
+
+
+
+
+
+
+  for i=1,#a do print(a[i]) end
+  local arg = table.pack(...)
+  return prtable(arg)
+  table.remove(arg)
+#!/usr/bin/lua
+--
+--
+--
+--  return print(select(2,...))
+-- exercise 1
+-- exercise 2
+-- exercise 3
+--a = {1,2,3}
+--end
+--function prtable1(...)
+--prtable(a)
+--prtable1(1,2,3,4)
+end
+end
+function prtable(a)
+function prtable2(...)
+prtable2(1,2,3,4)

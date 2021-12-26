@@ -1,0 +1,10 @@
+function weekDay()
+  t = os.date("*t")
+--  local sunday = 1
+  t.day = t.day - 5
+  t = os.date("*t", os.time(t))
+  print(t.year, t.day. twday)
+  return t.wday
+end
+
+print(weekDay())

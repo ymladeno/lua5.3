@@ -1,0 +1,3 @@
+function stringrep(s,n)
+  local r = ""
+end

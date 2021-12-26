@@ -1,0 +1,4 @@
+function mysearcher(name, path)
+end
+
+local p = "./?.lua;./?.so"

@@ -1,0 +1,3 @@
+--pcall(pcall, f)
+
+local status, error = pcall(function() error("my error") end)

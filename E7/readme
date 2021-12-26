@@ -1,0 +1,1093 @@
+exit
+q
+exit()
+import helloworld
+helloworld
+helloworld.py
+reload(helloworld)
+import helloworld
+2**3
+1/0
+1/dev
+L = [1,2]
+L.append(L)
+L
+"a\nb\x1f\OOOd"
+len(a\nb\x1f\OOOd)
+len("a\nb\x1f\OOOd")
+len("a\nb\x1f\O000d")
+len("a\nb\x1f")
+len("\x1f")
+len("\n")
+len("\OOOd")
+len("\0000d")
+len("\000d")
+T=(4,5,6)
+T=(0,) + T(1:) 
+T=(0,) + T[1:]
+T
+2**16
+2** 16
+2/5,2/5.0
+"spam" + "eggs"
+S="ham"
+"eggs"+S
+S*5
+S[:0]
+"green %s and %s" %("eggs",S)
+'green {0} and {1}'.format('eggs',S)
+('x',)[0]
+('x','y')[1]
+L=[1,2,3]+[4,5,6]
+L
+L,L[:],L[:0],L[-2],L[-2:]
+L
+L[:]
+L[:0]
+L[-2]
+L[-2:]
+([1,2,3]+[4,5,6])[2:4]
+[L[2],L[3]]
+L.reverse();L
+L.sort();L
+L.index(4)
+dir(index)
+dir(list)
+dir(list)['__add__']
+dir(list)
+dir(list.index)
+help(list.index)
+{'a':1,'b':2}['b']
+D={'x':1,'y':2,'z':3}
+D
+D['x']+D['w']
+D['w']=O
+D['w']=0
+D['x']+D['w']
+D[(1,2,3)]=4
+D
+list(D.keys()),list(D.values()),(1,2,3) in D
+[[]],["",[],(),{},None]
+L=[0,1,2,3]
+L[4]
+L[-1000:100]
+L[3:1]
+L[3:1] = ['?']
+L
+l
+L
+L=[0,1,2,3]
+L
+L[2]=[]
+L
+L[2:3]=[]
+L
+del L[0]
+L
+del L[1:0]
+L
+del L[1:]
+L
+L[1:2]=1
+L[1:2]=[1]
+L
+X='spam'
+Y='eggs'
+X,Y=Y,X
+X
+Y
+D['a']=1
+D['b']=2
+D['c']=3
+D
+D['d']
+a='a'
+D[a]
+d='d'
+D[d]
+'spam'+2
+'spam'+[4]
+[1]+(4,)
+[2]+D
+[3]+{8}
+S
+S=S.apend('s')
+dir(str)
+dir(S)
+S=S.append('s')
+dir(append)
+help str
+help(str)
+dir(list)
+L
+L=L.append(2);L
+L
+dir(append)
+help(list.append)
+L
+L=[1,2]
+L=L.appemd(3)
+L=L.append(3)
+L
+L=[1,2]
+L.append(3); L
+help(list.append)
+version
+python3 --version
+--version
+v
+-V
+import sys
+sys.vesrion_info.major
+dir(sys)
+sys.version_info
+dir(string)
+dir(str)
+help(list.append)
+help(str.append)
+L.keys()
+S
+S="spam"
+S[0][0][0][0][0]
+L=list(S)
+L
+L[0][0][0][0][0]
+S
+S[1:]
+S[0:1]
+S[0:1] + 'l' + S[1:]
+S[0:1] + 'l' + S[2:]
+S[0] +'l' + "am"
+Me={name:"Yordan, subname:"Krumov", family:"Mladenov"}
+Me={'name':'Yordan', 'subname':'Krumov', 'family':'Mladenov'}
+Me['name']
+Me["name"]
+Me["name"]="Yordan"
+Me["name"]
+Me[age]=44
+Me['age']=44
+dir(dict)
+dir(dict.update)
+help(dict.update)
+Me['job']='Senior Development C++'
+Me['address']='Sofia Mladost 1'
+Me['mail']='jmladenov@abv.bg'
+Me['pnone']=0887842001
+Me['pnone']=887842001
+Me
+Me['address']='Sofia, Mladost 1'
+Me
+help(open)
+writefile.py
+S = 'Dancho'
+for x in S: print(ord(x), end=' ')
+dir(sum)
+help(sum)
+S
+sum(for x in S)
+sum([x in for x in S])
+sum([for x in S])
+sum([x for x in S])
+sum([ord(x) for x in S])
+map(ord, S)
+list(map(ord, S))
+[ord(x) for x in S]
+s=0
+for x in S: s+=ord(x)
+s
+for i in range(50)
+print('hello %d\n\a' % i)
+for i in range(50):
+print('hello %d\n\a' % i)
+for i in range(50): print('hello %d\n\a' % i)
+D = {'name':Yordan,'job':'Programmer','age':44}
+D = {'name':'Yordan','job':'Programmer','age':44}
+D
+sort(D)
+help(sort)
+help sort
+sort help
+dir(sort)
+dir(sorted)
+help sorted
+help(sorted)
+sorted(D)
+list(D.keys()).sort()
+list(D.keys())
+L=list(D.keys())
+L
+L.sort()
+print(L.sort())
+L
+power
+2 in [1,2,3]
+pydoc -b
+pydoc -p 1234
+adder.py
+13//2
+13/2
+13%6.5
+13%6
+-8//2
+-8%-4
+-8//2
+-8%-4
+-8 % -4
+dir (abs)
+help (abs)
+3//2
+3%1
+3//2
+3%1
+-3/2
+-3//2
+-4//2
+-3//2
+3//2
+-3//2
+5/2
+5//2
+-5//2
+y = 2
+s = 1 if y
+if y s = 1
+s = 1 and y or s = -1
+s = 1 if y else -1
+s
+y = -2
+s = 1 if y else -1
+s
+if -2
+if y
+s = 1 if y else -1
+s
+y = 0
+s = 1 if y else -1
+s
+y = -3
+s = 1 if y else -1
+s
+s = 1 if y<0 else -1
+s
+y
+s = -1 if y<0 else 1
+s
+y
+0/2
+0//2
+0/0
+0//2
+0%0
+1//2
+y=5
+a = [y % x != 0 for x in range(y//2,2,-1)]
+a
+y = 8
+a = [y % x != 0 for x in range(y//2,2,-1)]
+a
+if all(y % x != 0 for x in range(y//2,2,-1)):
+	print("prime")
+else
+if all(y % x != 0 for x in range(y//2,2,-1)):
+	print("prime")
+else:
+	print("not prime"
+import timer
+timer.total(1000, prime(15))[0]
+import prime
+timer.total(1000, prime(15))[0]
+timer.total(1000, prime(15))
+prime(16)
+prime.prime(16)
+timer.total(1000, prime.prime(15))
+timer.total(1000, pow, 2, 1000)[0]
+timer.total(1000, prime.prime, 1000)[0]
+timer.total(1000, prime.prime1, 1000)[0]
+timer.total(1000, prime.prime, 1000)[0]
+import prime
+timer.total(1000, prime.prime, 1000)[0]
+reload prime
+reload(prime)
+prime.reload()
+dir (prime)
+help (reload)
+prime(16)
+prime.prime(16)
+import prime
+prime.prime(16)
+reload(prime)
+import impl
+import reload
+from impllib import reload
+from importlib import reload
+reload(prime)
+prime(16)
+prime.prime(16)
+timer.total(1000, prime.prime, 1000)[0]
+import timerit
+import timeit
+help (timeit )
+reload(prime)
+prime.prime(16)
+timeit.repeat(prime, number=16, repeat=5)
+timeit.repeat(prime.prime, number=16, repeat=5)
+timeit.repeat(stsmt=prime.prime, number=16, repeat=5)
+timeit.repeat(stmt=prime.prime, number=16, repeat=5)
+timeit.repeat(stmt="[x**2 for x in range(100)]", number=16, repeat=5)
+timeit.repeat(stmt="[x**2 for x in range(1000)]", number=16, repeat=5)
+timeit.repeat(stmt="[x**2 for x in range(10000)]", number=16, repeat=5)
+timeit.repeat(stmt="prime.prime", number=16, repeat=5)
+timeit.repeat(stmt='prime.prime(16)', number=16, repeat=5)
+timeit.repeat(setup='from prime import prime', stmt='prime(16)', number=16, repeat=5)
+timeit.repeat(setup='from prime import prime', stmt='prime1(16)', number=2, repeat=5)
+timeit.repeat(setup='from prime import prime1', stmt='prime1(16)', number=2, repeat=5)
+timeit.repeat(setup='from prime import prime', stmt='prime(16)', number=2, repeat=5)
+min(timeit.repeat(setup='from prime import prime', stmt='prime(16)', number=2, repeat=5))
+min(timeit.repeat(setup='from prime import prime1', stmt='prime1(16)', number=2, repeat=5))
+min(timeit.repeat(setup='from prime import prime', stmt='prime(16)', number=2, repeat=5))
+min(timeit.repeat(setup='from prime import prime1', stmt='prime1(16)', number=2, repeat=5))
+min(timeit.repeat(setup='from prime import prime', stmt='prime(16)', number=2, repeat=5))
+min(timeit.repeat(setup='from prime import prime,prime1', stmt='[(prime(16)),(prime1(16))]', number=2, repeat=5))
+min(timeit.repeat(setup='from prime import prime,prime1', stmt='[(prime(16)),(prime1(16))]', number=2, repeat=3))
+import math
+sqrt(2)
+from math import sqrt
+sqrt(2)
+sqrt(4)
+sqrt(9)
+import sqrt
+NEW
+sqrt.NEW
+help (map)
+L=[2,4,9,16,25]
+import math
+map(math.sqrt, L)
+list(map(math.sqrt, L)
+list(map(math.sqrt, L))
+[math.sqrt for x L]
+[math.sqrt for x in  L]
+L
+L1=[math.sqrt for x in  L]
+L1
+L1=[math.sqrt(x) for x in  L]
+L1
+help (print)
+import sqrt
+import mysqrt
+G=(math.sqrt(x) for x in  L)
+G
+L
+print(G)
+list(G)
+reload(mysqrt)
+L
+list(map(sqrt, L))
+list(map(math.sqrt, L))
+list(map(math.pow(x,.5), L))
+list(map(lambda x: math.pow(x,.5), L))
+[x**.5 for x in L]
+help (timeit)
+min(timeit.repeat(stmt='{x:x**2 for x in range(100)}', number=2, repeat=3))
+{x:x**2 for x in range(10)}
+min(timeit.repeat(stmt='res={}; for x in range(100): res[x]=x**2', number=2, repeat=3))
+min(timeit.repeat(stmt='res={};for x in range(100): res[x]=x**2', number=2, repeat=3))
+min(timeit.repeat(stmt='res={}\nfor x in range(100): res[x]=x**2', number=2, repeat=3))
+min(timeit.repeat(stmt='{x:x**2 for x in range(100)}', number=2, repeat=3))
+min(timeit.repeat(stmt='{x:x**2 for x in range(100)}', number=5, repeat=1000))
+min(timeit.repeat(stmt='res={}\nfor x in range(100): res[x]=x**2', number=5, repeat=1000))
+min(timeit.repeat(stmt='res={}\nfor x in range(100): res[x]=x**2', number=10, repeat=10000))
+min(timeit.repeat(stmt='{x:x**2 for x in range(100)}', number=10, repeat=10000))
+min(timeit.repeat(stmt='res={}\nfor x in range(100): res[x]=x**2', number=100, repeat=10000))
+min(timeit.repeat(stmt='{x:x**2 for x in range(100)}', number=100, repeat=10000))
+from countdown import countdown
+countdown(5)
+reload(countdown)
+from countdown import countdown
+countdown(10)
+import countdown
+reload(countdown)
+from countdown import countdown
+countdown(10)
+import countdown
+reload(countdown)
+from countdown import countdown
+countdown(10)
+import countdown
+reload(countdown)
+from countdown import countdown
+countdown(10)
+gen = (print(x,end=' ') for x in reverse(range(10))
+range(10)
+reverse(range(10))
+help (range)
+range(10,-1)
+for x in range(10,-1): print(x)
+[print(x,end=' ' for x in range(10,-1)]
+[print(x,end=' ') for x in range(10,-1)]
+[print(x,end=' ') for x in range(10)]
+[print(x,end=' ') for x in (1,2,3)]
+[x for x in (1,2,3)]
+[x for x in range(10)]
+[x for x in range(10,-1)]
+help (range)
+[x for x in range(0,10,-1)]
+[x for x in range(10,0,-1)]
+help (reverce)
+help (reverse)
+help (reversed)
+[x for x in reversed(range(10))]
+[x for x in range(10,0,-1)]
+gen = (x for x in range(10,0,-1))
+gen
+gen(10)
+x = gen(5)
+gen
+x = gen()
+x = gen
+x(5)
+list(gen)
+from factorial import fact
+fact(6)
+from functools import reduce
+reduce(lambda x: x*x-1, 6)
+help (reduce)
+reduce(lambda x: x*x-1, range(6,0,-1))
+help (reduce)
+reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
+reduce(lambda x, y: x*y, [1, 2, 3, 4, 5])
+reduce(lambda x, y: x*y, [1, 2, 3, 4, 5, 6])
+reduce(lambda x, y: x*y, range(6))
+reduce(lambda x, y: x*y, range(6,0,-1))
+def foo(N): print(N)
+foo(5)
+foo.__name__
+print('%-6s' % foo.__name__)
+print('%-6s:' % foo.__name__)
+print('%-6s: %d' % foo.__name__, 100)
+help (print)
+help (format)
+print('%-6s: %.5f' % foo.__name__, 100)
+print('%.5f' % 100)
+print('%.5f %.2f' % 100,5)
+print("%.5f %.2f" % 100,5)
+print("%.5f %.2f" % (100,5))
+print("%.5f %d" % (100,5))
+print("%.5f %d" % 100,5)
+from factorial import fact1, fact2, fact3, fact4
+from myfactorial import fact1, fact2, fact3, fact4
+min(timeit.repeat(stmt='fact1(6)', number=100, repeat=10000))
+min(timeit.repeat(setup='from my factorial import fact1', stmt='fact1(6)', number=100, repeat=10000))
+min(timeit.repeat(setup='from myfactorial import fact1', stmt='fact1(6)', number=100, repeat=10000))
+min(timeit.repeat(setup='from myfactorial import fact2', stmt='fact2(6)', number=100, repeat=10000))
+min(timeit.repeat(setup='from myfactorial import fact3', stmt='fact3(6)', number=100, repeat=10000))
+min(timeit.repeat(setup='from myfactorial import fact4', stmt='fact4(6)', number=100, repeat=10000))
+help (timeit)
+help (range)
+L=[1,2,3,4,5,6]
+L[-1]
+L[:-1]
+L[::-1]
+help (slice)
+help (list.slice)
+dir (list)
+L[1:3]
+L[0:3]
+L[:3]
+L[:-1]
+L[:-2]
+L[:3]
+L[::2]
+L[::-2]
+L[::-1]
+dir (file)
+dir (open)
+help(file)
+help(open)
+open("myfile")
+file = open("myfile")
+file
+file.readlines()
+dir (file)
+file.name
+file.mode
+file.readble
+file.readble()
+file.readable()
+file.readlines()
+file = open('myfile')
+file.readlines()
+file = open('myfile')
+len(file.readlines())
+import mymod
+mymod.countLines('myfile')
+file = open('myfile')
+file.read()
+file = open('myfile')
+len(file.read())
+import mymod
+from import.lib import reload
+from importlib import reload
+reload(mymod)
+mymod.test('mymod.py')
+from mymod import *
+test('mymod.py')
+from mymod import test
+test('mymod.py')
+countLines('mymod')
+countLines('mymod.py')
+countChar('mymod.py')
+import myclient
+dir (myclient)
+myclient
+myclient.__name__
+myclient.__dict__
+myclient.test('mymod.py'
+import myclient
+dir(myclient)
+myclient.test('mymod.py')
+import myclient
+dir(myclient)
+dir(myclient.mymod)
+myclient.mymod.test('mymod.py')
+import mypkg.mymod
+mypkg.mymod
+dir(mypkg.mymod)
+mypkg.mymod.test('mymod.py')
+mypkg.mymod.test('../mymod.py')
+import os
+dir(os)
+os.realpath('mypkg/mymod.py')
+mypkg.mymod.test('mypkg/mymod.py')
+import myclient
+import mypkg.mymod
+import changer
+from impl import reload
+from imp import reload
+reload(changer)
+import changer
+dir (changer)
+reload(changer)
+dir (changer)
+changer.printer()
+import recur1
+import recur2
+dir(dict)
+dir(list)
+help (dict.update)
+res = {}
+res
+res.update(1,'a')
+res.update({1,'a'})
+L=[1,2]
+res.update(L)
+n = {'x','y'}
+res
+res.update(n)
+dict = {'Name': 'Zara', 'Age': 7}
+dict2 = {'Sex': 'female' }
+dict.update(dict2)
+dict
+res.update(dict2)
+res
+res.update(dict)
+res
+n
+res.update(n)
+n = {'x': 'y'}
+res.update(n)
+res
+from Adder import Adder
+i=Adder()
+i.add(1,2)
+a=ListAdder()
+import Adder
+l=Adder.ListAdder()
+l.add(1,2)
+d=DictAdder()
+d=Adder.DictAdder()
+d.add(1,2)
+dir(reload)
+from importlib import reload
+reload(Adder)
+i=Adder.ListAdder(1,2)
+i=Adder.ListAdder()
+i.add(1,2)
+i.add(1)
+i.add(2)
+i.add(3)
+d=Adder.DictAdder()
+d.add(1)
+reload(Adder)
+d=Adder.DictAdder()
+d.add(1)
+d.add(2)
+d.add(3)
+d+4
+d
+list(d)
+reload(Adder)
+i+4
+i
+i=Adder.ListAdder()
+i+1
+i+2
+i+3
+i+4
+d=Adder.DictAdder()
+d+1
+d+2
+d+3
+d+4
+dir(list)
+help (list.__iter__)
+def foo: pass
+def foo(): pass
+foo().__name__
+foo.__name__
+import MyLists
+l=MyList()
+l=MyLists.MyList()
+l+1
+l
+reload(myLists)
+reload(MyLists)
+l=MyLists.MyList()
+l
+reload(MyLists)
+l=MyLists.MyList()
+l
+reload(MyLists)
+l=MyLists.MyList()
+l
+reload(MyLists)
+l=MyLists.MyList()
+l
+l+1
+l
+l+[2,3,4]
+l
+reload(MyLists)
+l=MyLists.MyList()
+l
+l+1
+reload(MyLists)
+l=MyLists.MyList()
+l
+l+1
+l+
+l
+l + [2,3,4]
+l
+l[2]
+l[0]
+l.apend(5)
+l.append(5)
+l
+l.append(100)
+reload(
+l
+l.sort()
+l
+reload(MyLists)
+l=MyLists.MyList()
+l=MyLists.MyList([1,2,100,10,3])
+l
+l.sort()
+l
+for i in l: print(i)
+l1 = [20,21,22]
+l1
+l=MyLists.MyList(l1)
+l
+l.append(5)
+l
+l1
+dir(list)
+help(list.copy)
+reload(MyLists)
+l1
+l=MyLists.MyList(l1)
+reload(MyLists)
+l=MyLists.MyList(l1)
+l1
+l
+l.append(6)
+l
+l1
+l2=MyLists.MyList(l1)
+l2
+l3=MyLists.MyList(l)
+l3
+l3.append(7)
+l3
+l2
+l
+l1
+l
+l1
+l + [51,52]
+l
+[62,63] + l
+reload(MyLists)
+l=MyLists.MyList(l1)
+l
+[62,63] + l
+l
+reload(MyLists)
+l=MyLists.MyList(l1)
+l
+reload(MyLists)
+l=MyLists.MyList(l1)
+l
+[62,63] + l
+l
+l.append(7)
+l
+l + [72,73]
+l
+count=0
+count++
+++count
+count
+count+=1
+count
+MyLists
+dir(MyLists)
+MyLists.__name__
+help(getattr)
+from MyListSub import MyListSub
+l=MyListSub()
+l
+l+1
+l+[1,2]
+l
+reload(MyListSub)
+l=MyListSub.MyListSub()
+l+[1,2]
+l
+help(getattr)
+help(class.getattr)
+help(class)
+help(MyListSub.getattr)
+help(list.getattr)
+MyListSub
+l +=[1,2]
+l
+reload(MyListSub)
+l=MyListSub.MyListSub()
+l+=[1,2]
+l
+MyListSub.getCount()
+MyList.MyListSub.getCount()
+MyListSub.MyListSub.getCount()
+l+=[3,4]
+MyListSub.MyListSub.getCount()
+l
+type(l)
+reload(MyListSub)
+l=MyListSub.MyListSub()
+l
+type(l)
+l+[1,2]
+l
+l+=[1,2]
+type(l)
+MyListSub.MyListSub.getCount()
+l+=[3,4]
+l
+MyListSub.MyListSub.getCount()
+l.getCount()
+dir(l)
+l.__class__
+l.__base__
+reload(MyList)
+reload(MyListSub)
+l=MyListSub.MyListSub1(1)
+l=MyListSub.MyListSub1([1])
+l.__class__
+l.__base__
+dir(l)
+l.__dir__
+def foo(*x): print('list') if isinstance(x,list) else print('int')
+foo(10)
+foo([1])
+foo(list(1))
+foo(list([1]))
+foo([1,2])
+x=list(1)
+x=[1,2]
+type(x)
+print('list) if isinstance(x,list)
+print('list) if isinstance(x,list) else print{'not')
+print('list') if isinstance(x,list) else print{'not')
+foo(x)
+def foo(*x): print(type(x)); print('list') if isinstance(x,list) else print('int')
+foo(x)
+def foo(*x=[]): print(type(x)); print('list') if isinstance(x,list) else print('int')
+def bar(*y): print('bar')
+bar(1)
+bar(1,2)
+bar()
+import Attrs
+a=Attrs.Attrs(100)
+a
+dir(a)
+a.attr
+a+200
+a.attr+200
+reload(Attrs)
+a=Attrs.Attrs(100)
+a
+reload(Attrs)
+a=Attrs.Attrs(100)
+a
+reload(Attrs)
+a=Attrs.Attrs(100)
+a
+a.attr+400
+a.attr
+a.attr += 100
+a.attr
+b = Attrs([])
+dir(list)
+help(list.copy)
+import copy
+dir(copy)
+b = Attrs([])
+b = Attrs(1)
+reload(Attrs)
+a=Attrs.Attrs([])
+a += [1,2]
+import Attrs1
+a=Attrs1.Attrs()
+a.apend
+reload(Attrs1)
+a.apend
+reload(Attrs1)
+a=Attrs1.Attrs()
+a.apend
+a.x=42
+reload(Attrs1)
+a=Attrs1.Attrs()
+a.y=45
+a.copy
+a.clear()
+a + 1
+import SetWrapper
+s1=SetWrapper.Set([1,4,5,6,10])
+s1
+s2=SetWrapper.Set([3,4,2,3])
+s2
+s1
+s1 & s2
+s1 | s2
+s=SetWrapper.Set('spam_and_ham')
+s
+s[:2]
+reload(SetWrapper)
+from implementlib import reload
+from importlib import reload
+reload(SetWrapper)
+s=SetWrapper.Set('spam_and_ham')
+s[:2]
+reload(SetWrapper)
+s=SetWrapper.Set('spam_and_ham')
+s[:2]
+reload(SetWrapper)
+s=SetWrapper.Set('spam_and_ham')
+s
+s[:2]
+s[2]
+for x in s: print(x)
+s&"hiham"
+s|"hiham"
+s|'hiham'
+s&'hiham'
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x
+y=SetWrapper.SetSub([3])
+y
+x.intersect([3])
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x.intersect([3])
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x.intersect([3])
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x.intersect([3])
+L=[1,2,3,4]
+L[-1]
+L[:-1]
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x.intersect([3])
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x.intersect([3])
+x.intersect([3,5])
+L1=[3]
+L1[:-1]
+L1[:]
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x
+x.intersect([3])
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x
+x.intersect([3])
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x.intersect([3])
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x.intersect([3])
+x.intersect([2])
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x.intersect([2],[4])
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x.intersect([1,2],[1,4])
+reload(SetWrapper)
+L=([1,2],[3])
+L
+len(L)
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x
+x.intersect([1,2],[1,4])
+x.intersect([1,2],[1,2,3,4])
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x.intersect([1,2])
+print('%d' % 1)
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x
+x.intersect([1,2])
+y=SetWrapper.Set([1,2,4])
+y
+y.intersect([1,2])
+x=SetWrapper.SetSub([1,2,4])
+x
+x.intersect([1,2])
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x.intersect([1,2])
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x.intersect([1,2])
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x.intersect([1,2])
+x.intersect([1,2],[1,4])
+x.intersect([1,2],[1,2,4])
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x.union([3])
+x.union([3,5],[4,7])
+x.union([3,5],[4])
+x.union([3,5],[4,7])
+x.union([3,5],[4])
+x.union([3,5],[4,7],[6])
+x.union([3])
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x & [3]
+x
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x
+x & [3]
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x
+x & [3]
+x & [2]
+x & [2] & [1]
+x & [1,2] & [1]
+reload(SetWrapper)
+x=SetWrapper.SetSub([1,2,4])
+x | [2] | [3] | [5]
+reload(SetWrapper)
+x=SetWrapper.Set([1,2,4])
+x.append(3)
+reload(SetWrapper)
+x=SetWrapper.Set([1,2,4])
+x.append(3)
+x
+x.__dict__
+dir(x)
+getattr(x, __dict__)
+getattr(x, x.__dict__)
+getattr(x, "__dict__")
+indent=' '*4
+result  = 'Unders%s\n%s%%s\nOthers%s\n' % ('-'*77, indent, '-'*77)
+result
+print(result)
+result  = 'Unders%s\n%%s\nOthers%s\n' % ('-'*77, indent, '-'*77)
+result  = 'Unders%s\n%s%%s\nOthers%s\n' % ('-'*77, indent, '-'*77)
+result
+myTuple = ("John", "Peter", "Vicky")
+x = "#".join(myTuple)
+x
+import ListerSub
+x=ListerSub.ListerSub()
+x
+dir(x)
+dir(ListerSub)
+x.__class__
+dir(x.__class__)
+x.__class__
+x.__class__.__name__
+x.__class__.__base__
+x..__base__
+x.__base__
+from importlib import reload
+reload(ListerSub)
+x=ListerSub.ListerSub()
+x
+x.__class__.__bases__
+[i.__name__ for i in x.__class__.__bases__]
+(i.__name__ for i in x.__class__.__bases__)
+[i.__name__ for i in x.__class__.__bases__]
+g=(i.__name__ for i in x.__class__.__bases__)
+g()
+g
+b=g()
+b=g
+b
+x.super
+dir(x)
+super(x)
+x.super()
+class Sub: def A(): super().__name__
+class Sub:
+def A(): print('A')
+class Sub:
+	def a(): print('A')
+x=Sub()
+x.a()
+class Sub:
+	def a(self): print('A')
+x=Sub()
+x.a()
+class SSS(Sub):
+	def sss(): print(super().__class__)
+y=SSS()
+y.sss()
+class SSS(Sub):
+	def sss(self): print(super().__class__)
+y=SSS()
+y.sss()
+import FastFood
+today=FastFood.Lunch()
+today.order("Spaggeti")
+today.result()
+import Scene
+Scene.Scene().action() 
+import exctools

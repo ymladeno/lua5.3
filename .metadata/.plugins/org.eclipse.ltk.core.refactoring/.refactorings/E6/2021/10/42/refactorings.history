@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;/E6/shufflelua.lua&apos; to &apos;shuffletable.lua&apos;&#x0A;- Original element: &apos;shufflelua.lua&apos;" description="Rename resource &apos;shufflelua.lua&apos;" flags="7" id="org.eclipse.dltk.ui.rename.resource" input="shufflelua.lua" name="shuffletable.lua" stamp="1633837973168" version="1.0"/>
+</session>

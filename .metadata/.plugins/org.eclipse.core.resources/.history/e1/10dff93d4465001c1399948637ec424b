@@ -1,0 +1,24 @@
+local balance = {}
+local Account = {}
+
+function Account:withdraw(v)
+  self.balance = self.balance - v
+end
+
+function Account:deposit(v)
+  self.balance = self.balance + v
+end
+
+function Account:balance()
+  return balance[self]
+end
+
+function Account:new(o)
+  o = o or { balance = 0 }
+  setmetatable(o, self)
+  self.__index = self
+  balance[o] = 0
+  return o
+end
+
+return Account

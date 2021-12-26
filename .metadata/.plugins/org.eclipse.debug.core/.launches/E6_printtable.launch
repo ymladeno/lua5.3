@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.ldt.debug.core.lualocaldebug">
+    <stringAttribute key="mainScript" value="printtable.lua"/>
+    <stringAttribute key="nature" value="org.eclipse.ldt.nature"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/E6/printtable.lua"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.dltk.launching.INTERPRETER_CONTAINER" value="org.eclipse.dltk.launching.INTERPRETER_CONTAINER/org.eclipse.ldt.support.lua52.JNLua52InterpreterInstallType/Lua 5.2 on JNLua"/>
+    <booleanAttribute key="org.eclipse.dltk.launching.debugConsole" value="false"/>
+    <stringAttribute key="process_factory_id" value="org.eclipse.dltk.launching.scriptProcessFactory"/>
+    <stringAttribute key="project" value="E6"/>
+</launchConfiguration>

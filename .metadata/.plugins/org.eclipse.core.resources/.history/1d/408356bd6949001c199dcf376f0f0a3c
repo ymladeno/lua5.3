@@ -1,0 +1,5 @@
+function day1Friday(year)
+  
+end
+
+day1Friday(1980)

@@ -1,0 +1,4 @@
+function substrings(s)
+  local i = 0
+  string.sub(s, i, j)
+end

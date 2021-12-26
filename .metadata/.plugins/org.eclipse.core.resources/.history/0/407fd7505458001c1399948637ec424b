@@ -1,0 +1,3 @@
+function save(name, value, saved)
+  saved = saved or {}
+end

@@ -1,0 +1,2 @@
+-- fixed path could be used for example to replace implementation of 'require'
+-- For more details https://www.lua.org/pil/8.1.html

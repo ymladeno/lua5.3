@@ -1,0 +1,39 @@
+function fileAsArray(name)
+  local proxy = {}
+  local mt = {
+    __index = function(_, k)
+      local f = io.open(name, "r")
+      local s = f:read("a")
+      local count = 1
+      for word in string.gmatch(s, "%w+") do
+        if count == k then return word end
+        count = count + 1
+      end
+      f:close()
+      end,
+
+    __newindex = function(_, k, v)
+      local f = io.open(name, "r+")
+      local s = f:read("a")
+      local count = 1
+      local newS = ""
+      for word in string.gmatch(s, "%w+") do
+        if count == k then 
+          newS = newS .. " " .. v
+        else
+          newS = newS .. " " .. word
+        end
+        count = count + 1
+      end
+      f:seek("set")
+      f:write(newS)
+      end
+  }
+  setmetatable(proxy, mt)
+  return proxy
+end
+
+local t = fileAsArray("temp")
+print(t[2])
+
+t[2] = "dog"

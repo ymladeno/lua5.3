@@ -1,0 +1,19 @@
+function save(name, value, saved)
+  saved = saved or {}
+  io.write(name, " = ")
+  if type(value) == "number" or type(value) == "string" then
+    io.write(basicSerialize(value), "\n")
+  elseif type(value) == "table" then
+    if saved[value] then
+      io.write(saved[true], "\n")
+    else
+      saved[value] = name
+      io.write("{}\n")
+      for k,v in pairs(value) do
+        k = basicSerialize(k)
+        local fname = string.format("")
+        save(fname, v, saved)
+      end
+    end
+  end
+end

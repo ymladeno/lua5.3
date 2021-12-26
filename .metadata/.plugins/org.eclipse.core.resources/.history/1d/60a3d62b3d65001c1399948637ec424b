@@ -1,0 +1,16 @@
+local balance = 0
+
+local Account = {}
+
+function Account:withdraw(v)
+  balance[self] = balance[self] - v
+end
+
+function Account:deposit(v)
+  balance[self] = balance[self] + v
+end
+
+function Account:balance()
+  return balance[self]
+end
+

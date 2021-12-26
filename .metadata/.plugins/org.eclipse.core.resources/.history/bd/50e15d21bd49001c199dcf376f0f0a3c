@@ -1,0 +1,5 @@
+local t1 = os.time({year=2015, month=1, day=12})
+local t2 = os.time({year=2011, month=12, day=16})
+local d = os.difftime(t1, t2)
+print("days: ", d // (24 * 3600))
+print("months: ", d // (30 * 24 * 3600))

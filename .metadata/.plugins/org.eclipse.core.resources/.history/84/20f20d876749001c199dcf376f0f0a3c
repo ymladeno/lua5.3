@@ -1,0 +1,4 @@
+function wsec()
+end
+
+wsec(os.date())

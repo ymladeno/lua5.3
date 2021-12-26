@@ -1,0 +1,12 @@
+function multiload(...)
+  local readerlist = {...} 
+  local code = function()
+    for _,v in pairs(readerlist) do
+      return v
+    end
+    return nil
+  end
+  return load(code)
+end
+
+f = multiload("local x = 10;", io.lines("temp", "*L"), "print(x)")

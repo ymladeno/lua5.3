@@ -1,0 +1,6 @@
+local balance = 0
+
+Account = {}
+
+function Account:withdraw(v)
+end

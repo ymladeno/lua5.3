@@ -1,0 +1,14 @@
+local queue = require "queue"
+
+local q = queue.new()
+queue.pushFirst(q, 10)
+queue.pushFirst(q, 3)
+
+print("first:", popFirst(q))
+
+queue.pushLast(l, 100)
+queue.pushLast(l, 50)
+
+print("first:",popFirst(l))
+print("last:", popLast(l))
+print("last:", popLast(l))

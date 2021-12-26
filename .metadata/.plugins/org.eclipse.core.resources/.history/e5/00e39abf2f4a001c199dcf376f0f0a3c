@@ -1,0 +1,4 @@
+function umod(n,d)
+  if d < 0 then
+  if math
+end

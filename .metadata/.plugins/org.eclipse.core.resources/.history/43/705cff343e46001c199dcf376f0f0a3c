@@ -1,0 +1,5 @@
+function words(file,n)
+end
+
+
+words("file", 5)

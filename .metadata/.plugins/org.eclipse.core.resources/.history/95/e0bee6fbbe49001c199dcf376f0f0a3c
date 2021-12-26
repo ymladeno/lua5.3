@@ -1,0 +1,7 @@
+local t = os.date()
+t.month = t.month + 1
+t.day = t.day + 1
+local t1 = os.date({year=2015, month=1, day=12})
+t1.day = t1.day + 1
+t1.month = t1.month + 1
+print(t == t1)

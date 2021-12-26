@@ -1,0 +1,7 @@
+function trim(s)
+  s = string.gsub(s, "^%s*(.-)%s*$", "%1")
+  return s
+end
+
+spaces_100K = string.rep(" ")
+print(trim("   this is not trimed "))

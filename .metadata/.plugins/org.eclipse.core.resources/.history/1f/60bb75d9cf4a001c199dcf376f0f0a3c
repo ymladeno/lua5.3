@@ -1,0 +1,5 @@
+function pali(x)
+  
+end
+
+print(pali(arg[1]))

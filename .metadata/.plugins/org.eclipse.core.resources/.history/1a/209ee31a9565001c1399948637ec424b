@@ -1,0 +1,51 @@
+local Account = {}
+local proxies = {}
+local mt = {
+    __index = function(t,k)
+        local objstate = proxies[t]
+        if objstate then
+            if type(objstate[k]) ~= "function"then error("try to access object's private data,key:" .. tostring(k)) end
+            return objstate[k]
+        end
+    end
+}
+function Account:withdraw(v)
+    self.balance = self.balance - v
+end
+
+function Account:deposit(v)
+    self.balance = self.balance + v
+end
+
+function  Account:getBalance ()
+    return self.balance
+end
+
+function Account:new(o)
+    o = o or {balance = 0}
+    self.__index = self
+    setmetatable(o,self)
+    return o
+end
+
+function account_proxy()
+    local obj = Account:new()
+    local proxy = {}
+    proxies[proxy] = obj
+    setmetatable(proxy,mt)
+    return proxy
+end
+
+--local account1 = account_proxy()
+--local account2 = account_proxy()
+--print(account1:getBalance())
+--account1:withdraw(2)
+--print(account1:getBalance())
+--account1:deposit(10)
+--print(account1:getBalance())
+--print("--------------------")
+--print(account2:getBalance())
+--account2:withdraw(5)
+--print(account2:getBalance())
+--account2:deposit(6)
+--print(account2:getBalance())

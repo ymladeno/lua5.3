@@ -1,0 +1,12 @@
+function prtable(a)
+  for i=1,#a do print(a[i]) end
+end
+
+function prtable1(...)
+  return print(select(2,...))
+end
+
+a = {1,2,3}
+prtable(a)
+
+prtable1(1,2,3,4)

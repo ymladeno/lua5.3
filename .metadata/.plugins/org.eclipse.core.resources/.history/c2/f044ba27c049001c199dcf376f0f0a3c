@@ -1,0 +1,9 @@
+local t = os.date("*t", os.time({}))
+t.month = t.month + 1
+t.day = t.day + 1
+local t1 = os.date("*t")
+t1.day = t1.day + 1
+t1.month = t1.month + 1
+print(t,t1,os.difftime(t1,t))
+print(os.date("%Y-%m-%d", os.time(t)))
+print(os.date("%Y-%m-%d", os.time(t1)))

@@ -1,0 +1,7 @@
+function multiload(readerlist)
+  local code = function()
+    
+  end
+  return load(code)
+end
+

@@ -1,0 +1,13 @@
+function day1Friday(y)
+  local t = os.time({year=y, month=1, day=1, hour=0})
+  local d = os.date("*t", t)
+  local diffwday = 6 - d.wday%7
+  local diffday = 1 + diffwday
+  return diffday
+--  local friday = 6
+--  local daysToFriday = 6 + d.wday - 
+--  local dayFromTheYear = d.day + daysToFriday 
+--  return dayFromTheYear
+end
+
+print(day1Friday(1980))

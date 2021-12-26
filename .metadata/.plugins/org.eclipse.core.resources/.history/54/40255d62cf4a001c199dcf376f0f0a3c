@@ -1,0 +1,15 @@
+function bits(x)
+  s = string.pack("J",x)
+  return 8 * #s
+end
+
+function bits(x)
+  local x = ~0
+  local cnt = 0
+  while not math.ult(x,1)
+    x = x >> 1
+  end
+  return 8 * #s
+end
+
+print(bits(tonumber(arg[1])))

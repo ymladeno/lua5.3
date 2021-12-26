@@ -1,0 +1,5 @@
+local f = io.open("records", "rb")
+local data = f:read("a")
+string.unpack(data)
+print(data.x)
+print(data.value)

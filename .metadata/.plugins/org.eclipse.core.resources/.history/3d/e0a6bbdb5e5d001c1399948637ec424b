@@ -1,0 +1,21 @@
+function multiload(...)
+  local args = table.pack(...)
+
+  local i = 0
+  local code = function()
+    while i <= args.n do
+      i = i + 1
+      print(args[i])
+      if type(args[i] == "function") then
+        print("2: ", args[i])
+        return args[i]()
+      end
+      return args[i]
+    end
+    return nil
+  end
+  
+  return load(code, "load code", "t")
+end
+
+--f = multiload("local x = 10;", io.lines("temp", "*L"), "print(x)")

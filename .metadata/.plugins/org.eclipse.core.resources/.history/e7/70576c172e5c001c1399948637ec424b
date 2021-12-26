@@ -1,0 +1,12 @@
+function multiload(readerlist)
+  local type_input = 
+  if type(readerlist) ~= "table"
+    error("input type is" .. )
+  end
+  
+  local code = function()
+    for _,v in pairs(readerlist)
+  end
+  return load(code)
+end
+

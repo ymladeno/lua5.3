@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;/E13/ex2.lua&apos; to &apos;ex4.lua&apos;&#x0A;- Original element: &apos;ex2.lua&apos;" description="Rename resource &apos;ex2.lua&apos;" flags="7" id="org.eclipse.dltk.ui.rename.resource" input="ex2.lua" name="ex4.lua" stamp="1637501018771" version="1.0"/>&#x0A;<refactoring comment="Rename resource &apos;/E13/bitArea.lua&apos; to &apos;bitArray.lua&apos;&#x0A;- Original element: &apos;bitArea.lua&apos;" description="Rename resource &apos;bitArea.lua&apos;" flags="7" id="org.eclipse.dltk.ui.rename.resource" input="bitArea.lua" name="bitArray.lua" stamp="1637602781849" version="1.0"/>
+</session>

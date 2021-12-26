@@ -1,0 +1,8 @@
+function pali(x)
+  s = string.format("%x", x)
+  
+  print(s, s:reverse())
+  return s == s:reverse()
+end
+
+print(pali(arg[1]))

@@ -1,0 +1,12 @@
+function fileAsArray(name)
+  local f = io.open(name, "w")
+  local mt = {
+  }
+  
+  return proxy
+end
+
+local t = fileAsArray("temp")
+print(t[2])
+
+t[2] = "dog"

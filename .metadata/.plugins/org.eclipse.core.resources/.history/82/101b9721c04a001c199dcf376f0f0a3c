@@ -1,0 +1,22 @@
+function bits(x)
+  local cnt = 0
+  local mask = 0x01
+  for i=1,64 do
+    cnt = cnt + (x & mask)
+    x = x >> 1
+  end
+  return cnt
+end
+
+function bits(x)
+  local cnt = 0
+  local mask = 0x01
+  for i=1,64 do
+    cnt = cnt + (x & mask) and 1 or 0
+    mask = mask << 1
+  end
+  return cnt
+end
+
+print(bits(tonumber(arg[1])))
+print(bits(tonumber(arg[1])))

@@ -1,0 +1,123 @@
+local function name2node(graph, name)
+  local node = graph[name]
+  if not node then
+    node = {name = name, adj = {}, weight = 0}
+    graph[name] = node
+  end
+  return node
+end
+
+function readgraph()
+  local graph = {}
+  for line in io.lines() do
+    local namefrom, nameto, label = string.match(line, "(%S+)%s+(%S+)%s+(%d+)")
+    local from = name2node(graph, namefrom)
+    local to = name2node(graph, nameto)
+    local arc = {label = tonumber(label), next = to}
+    from.adj[arc] = true
+  end
+  return graph
+end
+
+--function findpath(curr, to, path, visited, distance)
+--  path = path or {}
+--  visited = visited or {}
+--  distance = distance or 0
+--  
+--  if visited[curr] then
+--    return nil
+--  end
+--
+--  visited[curr] = true
+--  path[#path + 1] = curr
+--  if curr == to then
+--    return path, distance
+--  end
+--  
+--  for node in pairs(curr.adj) do
+--    distance = distance + node.label
+--    local p,d = findpath(node.next, to, path, visited, distance)
+--    if p then return p,d end
+--    distance = distance - node.label
+--  end
+--  table.remove(path)
+--end
+
+--function distance(path)
+--  local distance = 0
+--  for _,node in pairs(path) do
+--    distance = distance + node.weight
+--  end
+--  return distance
+--end
+
+function copytable(t)
+  local t1 = {}
+  for _,x in pairs(t) do
+    t1[#t1+1] = x
+  end
+  return t1
+end
+
+path = {}
+shortest = {}
+shortestDistance = 0
+
+function findShortestPath(curr, to, visited, distance)
+  visited = visited or {}
+  distance = distance or 0
+
+  visited[curr] = true
+  path[#path + 1] = curr
+  if curr == to then
+    return path
+  end
+
+  for node in pairs(curr.adj) do
+    distance = distance + node.label
+    local p = findShortestPath(node.next, to, visited, distance)
+    if p then
+        if shortestDistance == 0 or distance < shortestDistance then
+          shortestDistance = distance 
+          shortest = copytable(path) 
+        end
+--      local root = path[1]
+--      path = {root}
+    end
+    distance = 0
+    table.remove(path)
+  end
+end
+
+-- minimum spaining tree (dijkstra algoritm)
+function mst(curr, distance)
+  distance = distance or 0
+
+  for node in pairs(curr.adj) do
+    math.min(function )
+  end
+  mst
+end
+
+function findShortestPath1(curr, to)
+  local g = mst(curr)
+  local from = node2name(g, curr.name)
+  local to = node2name(g, to.name)
+  local p = findpath(from, to)
+  return p
+end
+
+function printpath(path)
+  for i = 1, #path do
+    print(path[i].name)
+  end
+end
+
+g = readgraph()
+a = name2node(g, "a")
+b = name2node(g, "b")
+--p,d = findpath(a, b)
+--if p then printpath(p); print("Distance: ", d) end
+findShortestPath(a, b)
+printpath(shortest)
+--if p then printpath(p); print("Distance: ", d) end

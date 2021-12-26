@@ -1,0 +1,5 @@
+function bits(x)
+  
+end
+
+print(bits(tonumber(argv[1])))

@@ -1,0 +1,6 @@
+function subSets(s)
+end
+
+function
+end
+for s in subSets({1,2,3,4}) do printSet(s) end

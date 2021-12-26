@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ASCII"?>
+<cache:CacheIndex xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cache="http://eclipse.org/dltk/cache_model" lastIndex="52" environment="org.eclipse.dltk.core.environment.localEnvironment">
+  <entries path="/home/osboxes/eclipse-workspace/lua/E2/src/main.lua" timestamp="1632630086075" lastAccessTime="1632630086604"/>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E2/src" timestamp="1632630086075" lastAccessTime="1632630086605">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/1913431662/7.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E5/src/main.lua" timestamp="1633368332310" lastAccessTime="1633368332841"/>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E5/src" timestamp="1633368332310" lastAccessTime="1633368332842">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/3966251981/11.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E6/src/main.lua" timestamp="1633750684762" lastAccessTime="1633750685311"/>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E6/src" timestamp="1633750684762" lastAccessTime="1633750685311">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/1969316471/13.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E7/src" timestamp="1634143539291" lastAccessTime="1634143540133">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/40260321/15.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/copyFile1/src/main.lua" timestamp="1634318493837" lastAccessTime="1634318494358"/>
+  <entries path="/home/osboxes/eclipse-workspace/lua/copyFile1/src" timestamp="1634318493837" lastAccessTime="1634318494358">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/3958355651/17.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E8/src/main.lua" timestamp="1634751444107" lastAccessTime="1634751444642"/>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E8/src" timestamp="1634751444107" lastAccessTime="1634751444651">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/2463715184/19.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E9/src" timestamp="1635049080057" lastAccessTime="1635049109097">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/3856564198/21.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E10/src" timestamp="1635599341025" lastAccessTime="1635599341823">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/1972292635/23.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E11/src" timestamp="1636999092394" lastAccessTime="1636999093212">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/42597517/25.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E12/src" timestamp="1637209168212" lastAccessTime="1637209168756">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/2608901431/29.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E13/src/main.lua" timestamp="1637416252799" lastAccessTime="1637416253590"/>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E13/src" timestamp="1637416252799" lastAccessTime="1637416253591">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/3968310689/31.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E14/src/main.lua" timestamp="1637990297373" lastAccessTime="1637990298007"/>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E14/src" timestamp="1637990297373" lastAccessTime="1637990298008">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/1927481346/33.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E15/src" timestamp="1638713605518" lastAccessTime="1638713606056">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/98842772/37.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E16/src" timestamp="1639285892927" lastAccessTime="1639285893452">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/2632804654/39.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E17/src" timestamp="1639664504069" lastAccessTime="1639664504856">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/3958004152/43.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E18/src" timestamp="1639803847158" lastAccessTime="1639803847697">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/2069185577/45.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E19/src" timestamp="1639974577979" lastAccessTime="1639974578518">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/206730431/47.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E20/src" timestamp="1640010648138" lastAccessTime="1640010648674">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/1587781592/49.idx"/>
+  </entries>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E21/src/main.lua" timestamp="1640319298498" lastAccessTime="1640319299037"/>
+  <entries path="/home/osboxes/eclipse-workspace/lua/E21/src" timestamp="1640319298498" lastAccessTime="1640319299038">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/698658638/51.idx"/>
+  </entries>
+</cache:CacheIndex>

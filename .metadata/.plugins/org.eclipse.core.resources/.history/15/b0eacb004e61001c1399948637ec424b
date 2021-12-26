@@ -1,0 +1,7 @@
+function prefix(w1, w2)
+  return w1 .. " " .. w2
+end
+
+function insert(prefix, value)
+  local list = statetab[prefix]
+end

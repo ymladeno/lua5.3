@@ -1,0 +1,3 @@
+function isByTwo(x)
+  return x%2 and true or false
+end

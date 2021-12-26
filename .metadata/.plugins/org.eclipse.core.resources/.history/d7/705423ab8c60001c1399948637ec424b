@@ -1,0 +1,18 @@
+function subSets(s)
+  local i = 1
+  local j = 0
+  local subSet = {}
+  return function()
+    while i < #s do
+      while
+    end
+  end
+end
+
+function printSet(s)
+  io.write("{")
+  for i = 1,#s do io.write(s[i]) end
+  io.write("}\n")
+end
+
+subSets(printSet)

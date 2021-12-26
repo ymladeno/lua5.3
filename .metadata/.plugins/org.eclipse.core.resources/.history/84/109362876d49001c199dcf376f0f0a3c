@@ -1,0 +1,12 @@
+function day1Friday(y)
+  local t = os.time({year=y, month=1, day=1, hour=0})
+  local d = os.date("*t", t)
+  local friday = 6
+  local daysToFriday = 6 - d.wday
+  d.day = d.day + daysToFriday 
+  print(d.wday)
+  d = os.date("*t", os.time(d))
+  return d.day
+end
+
+print(day1Friday(1980))

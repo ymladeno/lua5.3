@@ -1,0 +1,7 @@
+local stack = {}
+
+function Stack:new(o)
+  o = o or {}
+  self.__index = self
+  setmetatable(o, self)
+end

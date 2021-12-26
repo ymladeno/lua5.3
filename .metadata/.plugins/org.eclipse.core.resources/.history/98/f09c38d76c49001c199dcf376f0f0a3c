@@ -1,0 +1,10 @@
+function day1Friday(y)
+  t = os.time({year=y, month=1, day=1, hour=0})
+  d = os.date("*t", t)
+  d.wday = d.wday + (6-d.wday)
+  print(d.way)
+  d = os.date("*t", os.time(d))
+  return d.day
+end
+
+print(day1Friday(1980))

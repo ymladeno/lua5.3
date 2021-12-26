@@ -1,0 +1,11 @@
+local Account = require 'account'
+
+local a = Account:new()
+a:deposit(100.0)
+print(a:balance())
+
+-- run from console
+-- dofile 'testAccount.lua'
+-- 
+package.loaded["account"] = nil
+]=]--

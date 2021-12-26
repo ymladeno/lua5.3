@@ -1,0 +1,8 @@
+function serialize(o)
+  local t = type(o)
+  if t == "number" or t == "string" or t == "boolean" or t == "nil" then
+    io.write(string.format("%q", o))
+  elseif
+    
+  end 
+end

@@ -1,0 +1,11 @@
+function pali(x)
+  local s = string.format("%x", x)
+  for i=1,64 do
+    local sMask = 0x01
+    local eMask = -1
+  end
+  print(s, s:reverse())
+  return s == s:reverse()
+end
+
+print(pali(arg[1]))

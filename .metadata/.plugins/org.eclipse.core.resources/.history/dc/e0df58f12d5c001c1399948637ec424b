@@ -1,0 +1,7 @@
+function multiload(readerlist)
+  local code = function()
+    for _,v in pairs(readerlist)
+  end
+  return load(code)
+end
+

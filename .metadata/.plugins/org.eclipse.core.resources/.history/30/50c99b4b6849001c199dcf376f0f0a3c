@@ -1,0 +1,7 @@
+function sinceDayToSec(t)
+  local hours = t % sec2day // sec2hours
+  
+  return
+end
+
+wsec(os.date())

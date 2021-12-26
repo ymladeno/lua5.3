@@ -1,0 +1,6 @@
+local Set = {}
+
+function Set.new(l)
+  local set = {}
+    
+end

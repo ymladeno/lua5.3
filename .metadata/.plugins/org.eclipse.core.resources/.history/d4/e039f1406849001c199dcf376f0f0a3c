@@ -1,0 +1,7 @@
+function sinceDayToSec(t)
+  hours = 
+  
+  return
+end
+
+wsec(os.date())

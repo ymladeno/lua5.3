@@ -1,0 +1,10 @@
+function subSets(s)
+end
+
+function printSet(s)
+  io.write("{")
+  for i = 1,#s do io.write(s[i]) end
+  io.write("}\n")
+end
+
+for s in subSets({1,2,3,4}) do printSet(s) end

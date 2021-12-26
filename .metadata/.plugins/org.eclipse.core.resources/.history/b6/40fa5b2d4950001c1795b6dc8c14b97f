@@ -1,0 +1,6 @@
+local function name2node(graph, name)
+  local node = graph[name]
+  if not node then
+  
+  end
+end

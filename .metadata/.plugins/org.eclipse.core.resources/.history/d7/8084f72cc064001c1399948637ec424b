@@ -1,0 +1,37 @@
+local Stack = {}
+
+function Stack:new(o)
+  o = o or {}
+  self.__index = self
+  o.list = o
+  setmetatable(o, self)
+  return o
+end
+
+function Stack:push(v)
+  self.list[#self.list + 1] = v
+end
+
+function Stack:pop()
+  if self:isempty() then error("stack is empty", 2) end
+  return table.remove(self.list)
+end
+
+function Stack:top()
+  return self.list[#self.list]
+end
+
+function Stack:isempty()
+  return #self.list == 0
+end
+
+local s = Stack:new{}
+s:push(1); s:push(2); s:push(3)
+local s1 = Stack:new{10,20,30}
+s1:push(40)
+
+print(s:top(), s1:top())
+print(s:pop(), s:pop(), s:pop())
+print(s:isempty())
+print(s1:pop(), s1:pop(), s1:pop(), s1:pop())
+print(s1:isempty())

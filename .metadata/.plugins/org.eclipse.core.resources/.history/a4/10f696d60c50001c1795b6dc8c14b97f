@@ -1,0 +1,5 @@
+-- Double ended queue
+
+function listNew()
+  return {first = 0, last = -1}
+end

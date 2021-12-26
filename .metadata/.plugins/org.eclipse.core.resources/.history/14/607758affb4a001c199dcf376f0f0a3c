@@ -1,0 +1,15 @@
+function pali(x)
+  local t = {}
+  while x > 0 do
+    local b = x%2
+    t[#]
+    x = 
+  end
+--  local s = string.format("%x", x)
+--  local s1 = s:reverse()
+--  
+--  print(s, s:reverse())
+--  return s == s:reverse()
+end
+
+print(pali(arg[1]))

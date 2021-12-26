@@ -1,0 +1,4 @@
+function multiload(reader)
+  return load(code)
+end
+

@@ -1,0 +1,5 @@
+function pali(x)
+  string.format()
+end
+
+print(pali(arg[1]))

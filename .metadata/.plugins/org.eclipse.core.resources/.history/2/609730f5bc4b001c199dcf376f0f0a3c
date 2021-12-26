@@ -1,0 +1,13 @@
+function newBitArray(n)
+  t = {}
+  for i=1,n do
+    t[#t+1] = 0
+  end
+  return t
+end
+
+function setBit(a,n,v)
+end
+
+function testBit(a,n)
+end

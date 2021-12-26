@@ -1,0 +1,5 @@
+local Account = require 'Account'
+
+local a = Account:new()
+a:deposit(100.0)
+print(a:balance())

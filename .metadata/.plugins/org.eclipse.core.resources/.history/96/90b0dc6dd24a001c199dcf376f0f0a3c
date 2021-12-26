@@ -1,0 +1,9 @@
+function pali(x)
+  s = string.format("%x", x)
+  for i=1,64 do
+  end
+  print(s, s:reverse())
+  return s == s:reverse()
+end
+
+print(pali(arg[1]))

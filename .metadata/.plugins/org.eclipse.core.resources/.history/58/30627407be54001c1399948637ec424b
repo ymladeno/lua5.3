@@ -1,0 +1,85 @@
+local function name2node(graph, name)
+  local node = graph[name]
+  if not node then
+    node = {name = name, adj = {}, weight = 0}
+    graph[name] = node
+  end
+  return node
+end
+
+function readgraph()
+  local graph = {}
+  for line in io.lines() do
+    local namefrom, nameto, label = string.match(line, "(%S+)%s+(%S+)%s+(%d+)")
+    local from = name2node(graph, namefrom)
+    local to = name2node(graph, nameto)
+    local arc = {label = tonumber(label), next = to}
+    from.adj[arc] = true
+  end
+  return graph
+end
+
+--function findpath(curr, to, path, visited, distance)
+--  path = path or {}
+--  visited = visited or {}
+--  distance = distance or 0
+--  
+--  if visited[curr] then
+--    return nil
+--  end
+--
+--  visited[curr] = true
+--  path[#path + 1] = curr
+--  if curr == to then
+--    return path, distance
+--  end
+--  
+--  for node in pairs(curr.adj) do
+--    distance = distance + node.label
+--    local p,d = findpath(node.next, to, path, visited, distance)
+--    if p then return p,d end
+--    distance = distance - node.label
+--  end
+--  table.remove(path)
+--end
+
+function findShortestPath(curr, to, path, visited, shortestPath)
+  path = path or {}
+  visited = visited or {}
+  shortestPath = shortestPath or {}
+
+  if visited[curr] then
+    return nil
+  end
+
+  visited[curr] = true
+  path[#path + 1] = curr
+  if curr == to then
+    return path
+  end
+
+  for node in pairs(curr.adj) do
+    if node.next.weight == 0 or node.next.weight > node.label then node.next.weight = node.label end 
+    local p = findShortestPath(node.next, to, path, visited, shortestPath)
+    if not p then table.remove(path)
+    else
+      local lastDistance = distance(path)
+      local shortestDistance = table,concat(shortestPath)
+      if #shortestPath == 0 or lastDistance < shortestDistance then shortestPath = path end
+    end
+  end
+end
+
+function printpath(path)
+  for i = 1, #path do
+    print(path[i].name)
+  end
+end
+
+g = readgraph()
+a = name2node(g, "a")
+b = name2node(g, "b")
+--p,d = findpath(a, b)
+--if p then printpath(p); print("Distance: ", d) end
+findShortestPath(a, b)
+--if p then printpath(p); print("Distance: ", d) end

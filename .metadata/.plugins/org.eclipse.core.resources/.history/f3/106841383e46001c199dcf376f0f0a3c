@@ -1,0 +1,7 @@
+function words(file,n)
+  local counter = {}
+  
+end
+
+
+words("file", 5)

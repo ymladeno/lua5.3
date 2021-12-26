@@ -1,0 +1,5 @@
+function translateUTF8(s)
+end
+
+match = {ã = }print("ação")
+print

@@ -1,0 +1,18 @@
+function writeFile()
+  local f = io.open("records", "wb")
+  local s = string.pack("i b b b f", 100, 0x46, 0x47, 0x48, 102.3)
+  f:write(s)
+  f:close()
+end
+
+function readFile()
+  local f = io.open("records", "rb")
+  local data = f:read("a")
+  local x,pos = string.unpack("i", data)
+  local a = {}
+  local x,pos = string.unpack("b", data, pos)
+  a[1],pos = string.unpack("b", data, pos)
+ 
+  print(data.x)
+  print(data.value)
+end

@@ -1,0 +1,7 @@
+function translate(s,tab)
+  local s = string.gsub(s, ".", tab)
+  return s
+end
+
+tab = {["a"] = "A", ["b"] = "B", ["c"] = "C"}
+translate("adbc", tab)

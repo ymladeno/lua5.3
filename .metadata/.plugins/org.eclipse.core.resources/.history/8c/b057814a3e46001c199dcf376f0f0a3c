@@ -1,0 +1,8 @@
+function words(file,n)
+  local counter = {}
+  for line in io.lines() do
+    for 
+end
+
+
+words("file", 5)

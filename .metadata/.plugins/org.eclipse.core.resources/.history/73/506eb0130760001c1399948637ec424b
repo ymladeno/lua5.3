@@ -1,0 +1,4 @@
+function allwords()
+  local line = io.read()
+  
+end

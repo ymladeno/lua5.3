@@ -1,0 +1,24 @@
+-- it does not work
+
+local Account = require 'account'
+local proxies = {}
+local mt = {
+  __index = function(t, k)
+    local a = proxies[t]
+    return a[k]:()
+    end
+}
+
+local function proxyAccount()
+  local proxy = {}
+  local a = Account:new{}
+  proxies[proxy] = a
+  setmetatable(proxy, mt)
+  print("a.balance: ", a.balance)
+  return proxy
+end
+
+local b = proxyAccount()
+print("b.balance: ", b:getbalance())
+b:deposit(103.5)
+print(b:balance())

@@ -1,0 +1,61 @@
+local function name2node(graph, name)
+  local node = graph[name]
+  if not node then
+    node = {name = name, adj = {}}
+    graph[name] = node
+  end
+  return node
+end
+
+function readgraph()
+  local graph = {}
+  for line in io.lines() do
+    local namefrom, nameto, label = string.match(line, "(%S+)%s+(%S+)%s+(%d+)")
+    local from = name2node(graph, namefrom)
+    local to = name2node(graph, nameto)
+    local arc = {label = label, next = to}
+    from.adj[arc] = true
+  end
+  return graph
+end
+
+function findpath(curr, to, path, visited)
+  path = path or {}
+  visited = visited or {}
+
+  if visited[curr] then
+    return nil
+  end
+
+  visited[curr] = true
+--  path shall include node is it's included in shortest path
+  path[#path + 1] = curr
+  if curr == to then
+    return path
+  end
+
+-- choose next node to be one with smallest label
+  for node in pairs(curr.adj) do
+    for node in pairs(curr.adj) do
+      local 
+    end
+    local p = findpath(node.next, to, path, visited)
+    if p then return p end
+  end
+  table.remove(path)
+end
+
+function printpath(path)
+  for i = 1, #path do
+    print(path[i].name)
+  end
+end
+
+function findShortestPath()
+end
+
+g = readgraph()
+a = name2node(g, "a")
+b = name2node(g, "b")
+p = findpath(a, b)
+if p then printpath(p) end

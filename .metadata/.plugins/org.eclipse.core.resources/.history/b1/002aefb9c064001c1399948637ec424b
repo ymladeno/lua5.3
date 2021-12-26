@@ -1,0 +1,4 @@
+local Stack = require 'stack'
+
+local StackQueque = Stack:new{}
+Stack

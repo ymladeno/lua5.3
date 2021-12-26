@@ -1,0 +1,8 @@
+function allwords()
+  local line = io.read()
+  local pos = 1
+  return function()
+    while line do
+      local w,e 
+    end
+end

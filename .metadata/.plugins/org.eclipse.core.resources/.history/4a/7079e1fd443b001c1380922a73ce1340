@@ -1,0 +1,10 @@
+function escape(s)
+  local s1 = string.gsub(s, "\0", function(c) 
+    local s2 = string.format("\\x%02X", string.byte(c))
+    return s2 
+    end
+  )
+  return s1
+end
+
+print(escape("\0\1hello\200"))

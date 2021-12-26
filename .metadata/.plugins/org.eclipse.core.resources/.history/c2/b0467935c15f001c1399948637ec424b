@@ -1,0 +1,6 @@
+local function fromto(n,m)
+end
+
+for i in fromto(n,m) do
+-- body
+end

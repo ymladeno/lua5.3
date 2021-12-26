@@ -1,0 +1,10 @@
+local function fromto(n,m)
+  return function() 
+          if n > m then return nil end
+          local r = n
+                    n = n + 1
+          return n
+         end
+end
+
+for i in fromto(1,5) do print(i) end

@@ -1,0 +1,2 @@
+local f = io.open("records", "rb")
+f:read("a")

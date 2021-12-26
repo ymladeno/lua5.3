@@ -1,0 +1,5 @@
+function readOnly(t)
+  local proxy = {}
+  local mt = {
+  }
+end

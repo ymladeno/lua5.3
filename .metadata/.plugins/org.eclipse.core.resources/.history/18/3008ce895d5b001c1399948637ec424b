@@ -1,0 +1,8 @@
+function loadwithprefix(prefix, chunk)
+  local type_prefix = type(prefix)
+--  load()
+end
+
+local f = loadwithprefix("lua_", "i = i + 1")
+f();
+--loadwithprefix("lua_", io.read())

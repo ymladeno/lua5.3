@@ -1,0 +1,4 @@
+function translateUTF8(s)
+end
+
+print

@@ -1,0 +1,8 @@
+function fileAsArray(name)
+  return proxy
+end
+
+local t = fileAsArray("temp")
+print(t[2])
+
+t[2] = "new"

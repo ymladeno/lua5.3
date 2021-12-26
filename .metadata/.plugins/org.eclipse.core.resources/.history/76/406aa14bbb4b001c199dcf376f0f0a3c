@@ -1,0 +1,5 @@
+function newBitArray(n)
+end
+
+function setBit(a,n,v)
+end

@@ -1,0 +1,27 @@
+local stack = {index = 0, value = {}}
+
+function Stack:new(o)
+  o = o or {}
+  self.__index = self
+  setmetatable(o, self)
+  return o
+end
+
+function Stack:push(v)
+  self.index = self.index + 1
+  self.value[self.index] = v
+end
+
+function Stack:pop()
+  local r = self.value[self.index]
+  self.index = self.index - 1
+  return r
+end
+
+function Stack:top()
+  return self.value[self.index]
+end
+
+function Stack:isempty()
+  return #self.value == 0
+end

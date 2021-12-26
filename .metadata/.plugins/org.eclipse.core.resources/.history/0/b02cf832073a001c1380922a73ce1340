@@ -1,0 +1,16 @@
+function split(s,sep)
+  local pattern = string.format("[^]")
+end
+
+split("this is a test", " ")
+
+
+--  list = {}
+--  sep = "%"..sep.."+"
+--  for i in string.gmatch("this is a test", sep) do print(i) end
+--  return list
+
+
+--  p = (string.find(s,sep))
+--  s1 = string.sub(s,1,p)
+--  s2 = string.sub(s,p)

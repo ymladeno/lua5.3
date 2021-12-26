@@ -1,0 +1,5 @@
+function mysearcher(name, path)
+  local loader = package.searchpath(name, path)
+end
+
+local p = "./?.lua;./?.so;/usr/lib/lua5.3/?.so;/usr/share/lua5.3/?.lua"

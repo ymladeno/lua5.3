@@ -1,0 +1,3 @@
+print('<![CDATA[\n\tHello world\n]]>')
+-- print("<![CDATA[\n\tHello world\n]]>")
+--[==

@@ -1,0 +1,3 @@
+local function name2node(graph, name)
+  local node = graph[name]
+end

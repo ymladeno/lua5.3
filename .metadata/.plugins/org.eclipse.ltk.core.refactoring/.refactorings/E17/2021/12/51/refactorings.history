@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;/E17/geometric.lua&apos; to &apos;geometry.lua&apos;&#x0A;- Original element: &apos;geometric.lua&apos;" description="Rename resource &apos;geometric.lua&apos;" flags="7" id="org.eclipse.dltk.ui.rename.resource" input="geometric.lua" name="geometry.lua" stamp="1639714918035" version="1.0"/>
+</session>

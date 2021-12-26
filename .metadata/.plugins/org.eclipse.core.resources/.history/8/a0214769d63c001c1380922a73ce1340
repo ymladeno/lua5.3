@@ -1,0 +1,5 @@
+function translateUTF8(s)
+end
+
+match = {[ã] = a, [ç] = ã}
+print(translateUTF8)

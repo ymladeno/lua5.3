@@ -1,0 +1,3 @@
+local Set = require 'sets.lua'
+
+s1 = Set.new{10, 20, 30, 40}

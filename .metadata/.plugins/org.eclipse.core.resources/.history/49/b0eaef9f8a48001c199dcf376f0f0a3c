@@ -1,0 +1,3 @@
+t = os.date("*t")
+
+t.month = t.month + 1
